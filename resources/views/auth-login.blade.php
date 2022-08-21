@@ -19,37 +19,41 @@ background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 11
 background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
     </style>
-    <title>Hello, world!</title>
+    <title>Weizle - Express Your Self</title>
   </head>
   <body>
-  <section class="vh-100 gradient-custom">
+  <section class="vh-95 gradient-custom">
   <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+     <div class="row d-flex justify-content-around align-items-center h-50">
+      <div class="col-md-5 mb-4 text-center text-white">
+        <h1 class="fs-1 fw-bold mb-2 text-uppercase">WEIZLE</h1>
+        <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse!
+        </p>
+      </div>
+      <div class="col-md-5">  
+        <div class="card bg-light text-dark" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
 
-            <div class="mb-md-5 mt-md-4 pb-5">
+            <div class="mb-md-3 mt-md-4 pb-5">
 
-              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-              <p class="text-white-50 mb-5">Please enter your login and password!</p>
-
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+              <h2 class="fw-bold mb-5 text-uppercase">Login</h2>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
               </div>
 
-              <div class="form-outline form-white mb-4">
-                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-              </div>
+              <p class="small pb-lg-2 pt-2"><a class="text-dark-50" href="#!">Forgot password?</a></p>
 
-              <p class="small pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-
-              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              <button class="btn btn-dark btn-lg px-5" type="submit">Login</button>
 
             </div>
 
             <div>
-              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              <p class="mb-3">Don't have an account? <a href="#!" class="text-dark-50 fw-bold">Sign Up</a>
               </p>
             </div>
 
@@ -58,6 +62,11 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
       </div>
     </div>
   </div>
+</section>
+<section class="small text-center pt-4 mt-4" style="font-size:12px;">
+  <p>
+    weizle@2022
+  </p>
 </section>
     <!-- Optional JavaScript; choose one of the two! -->
 

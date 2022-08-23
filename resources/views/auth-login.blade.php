@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-      .gradient-custom {
+      .landing {
 /* fallback for old browsers */
 background: #6a11cb;
 
@@ -16,15 +16,27 @@ background: #6a11cb;
 background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+height: 85vh;
 }
+
+/* .landcont{
+  margin-top:-1% !important;
+} */
+
+@media only screen and (max-width: 800px) {
+  .landcont{
+    margin-top: 0;
+  }
+} 
+
     </style>
     <title>Weizle - Express Your Self</title>
   </head>
   <body>
-  <section class="vh-95 gradient-custom">
+  <section class="landing">
   <div class="container py-5 h-100">
-     <div class="row d-flex justify-content-around align-items-center h-50">
+     <div class="row d-flex justify-content-around align-items-center h-50 landcont " style="">
       <div class="col-md-5 mb-4 text-center text-white">
         <h1 class="fs-1 fw-bold mb-2 text-uppercase">WEIZLE</h1>
         <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse!
@@ -63,8 +75,8 @@ background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 
     </div>
   </div>
 </section>
-<section class="small text-center pt-4 mt-4" style="font-size:12px;">
-  <p>
+<section class="d-flex justify-content-center">
+  <p class="small" style="font-size:12px; margin:3.5%;">
     weizle@2022
   </p>
 </section>
